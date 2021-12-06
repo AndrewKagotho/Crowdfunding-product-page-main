@@ -128,7 +128,7 @@ hideModal.onclick = () => {
 }
 
 // Retrieving data from API
-fetch('http://localhost:8000/Database')
+fetch('https://github.com/AndrewKagotho/Crowdfunding-product-page-main/blob/master/CDFdata.json')
 .then(response => response.json())
 .catch(error => console.log('=> '+error))
 .then(data => {
@@ -338,6 +338,9 @@ function disablePledge(data){
     if(data[0]['Total']>=100000){
         modalNoPledge.style.filter = 'opacity(0.5)'
         radioNoPledge.disabled = true
+        radioBamboo.disabled = true
+        radioBlackEdition.disabled = true
+        radioMahoganySpecial.disabled = true
     }
     if(data[0]['Bamboo Stands Left']==0){
         bamboo.style.filter = 'opacity(0.5)'
