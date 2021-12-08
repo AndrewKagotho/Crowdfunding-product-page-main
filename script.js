@@ -128,7 +128,7 @@ hideModal.onclick = () => {
 }
 
 // Retrieving data from API
-fetch('Access-Control-Allow-Origin:https://github.com/AndrewKagotho/Crowdfunding-product-page-main/blob/master/CDFdata.json')
+fetch('https://cors-anywhere.herokuapp.com/https://github.com/AndrewKagotho/Crowdfunding-product-page-main/blob/master/CDFdata.json')
 .then(response => response.json())
 .catch(error => console.log('=> '+error))
 .then(data => {
